@@ -1,4 +1,4 @@
-import React from "react";
+import AboutContent from "@/components/about/AboutContent";
 import { getDictionary } from "../dictionaries";
 
 export default async function AboutPage({
@@ -6,12 +6,13 @@ export default async function AboutPage({
 }: {
   params: { locale: "en" | "fa" };
 }) {
-  const { locale } = params;
+  const { locale } =await params;
   const dict = await getDictionary(locale);
   return (
-    <div>
-      <h1>{dict.about.title}</h1>
-      <p>{dict.about.bio}</p>
-    </div>
+    <AboutContent
+    title={dict.about.title}
+    intro={dict.about.intro}
+    details={dict.about.details}
+  />
   );
 }

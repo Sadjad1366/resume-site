@@ -31,6 +31,7 @@ const Navbar: React.FC<Props> = ({labels}) => {
 
       <Link href={`/${currentLocale}/projects`}>{labels.projects}</Link>
       <Link href={`/${currentLocale}/about`}>{labels.about}</Link>
+      <Link href={`/${currentLocale}/contact`}>{labels.contact}</Link>
     </main>
   );
 };

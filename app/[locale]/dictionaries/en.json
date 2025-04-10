@@ -5,33 +5,47 @@
   },
   "navbar": {
     "projects": "Projects",
-    "about": "About"
+    "about": "About",
+    "contact": "Contact Us"
   },
   "about": {
     "title": "About Me",
-    "bio": "I'm a frontend developer passionate about learning new technologies."
+    "intro": "I’m Sajad, 38 years old, a frontend developer passionate about React and Next.js.",
+    "details": "In the past, I worked in various fields including financial markets and fire alarm & extinguishing systems in the oil and gas industry. But none of those paths made me feel fulfilled. In 2024, I decided to follow my true passion: programming. I joined a 7-month bootcamp focused on React and Next.js, and successfully completed it. Now, I'm eager to pursue my path as a developer and keep growing every day."
   },
   "contact": {
-  "title": "Contact Me",
-  "name": "Name",
-  "namePlaceholder": "Enter your name",
-  "email": "Email",
-  "emailPlaceholder": "Enter your email",
-  "message": "Message",
-  "messagePlaceholder": "type Message",
-  "send": "Send"
-},
-"projects": {
-  "title": "Projects",
-  "list": [
-    {
-      "title": "Personal Resume",
-      "description": "A site to showcase skills and portfolio"
-    },
-    {
-      "title": "Online Store",
-      "description": "A React-based demo store with cart functionality"
-    }
-  ]
-}
+    "title": "Contact Me",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "message": "Message",
+    "messagePlaceholder": "type Message",
+    "send": "Send"
+  },
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "title": "Personal Resume",
+        "description": "A site to showcase skills and portfolio",
+        "link": "https://nomanzi.com",
+        "techs": ["React", "Next.js", "Tailwind"]
+      },
+      {
+        "title": "Ninja Watch Gallery",
+        "description": "A React-based demo store with cart functionality",
+        "link": "https://maktab118-project-sadjad-ghasemi.vercel.app/",
+        "techs": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Redux Toolkit",
+          "NodeJS",
+          "MongoDB",
+          "Tailwind"
+        ]
+      }
+    ]
+  }
 }
