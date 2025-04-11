@@ -21,7 +21,9 @@
     "emailPlaceholder": "Enter your email",
     "message": "Message",
     "messagePlaceholder": "type Message",
-    "send": "Send"
+    "send": "Send",
+    "success": "Your message was sent successfully!",
+    "error": "There was an error sending your message"
   },
   "projects": {
     "title": "Projects",
