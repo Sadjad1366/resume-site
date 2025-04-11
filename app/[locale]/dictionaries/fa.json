@@ -1,4 +1,10 @@
 {
+  "home": {
+  "title": "من یک توسعه‌دهنده‌ام",
+  "description": "تمرکز من روی ساخت رابط‌های کاربری تمیز، مدرن و سریع با React و Next.js هست.",
+  "seeProjects": "دیدن پروژه‌ها",
+  "contactMe": "تماس با من"
+},
   "intro": {
     "greeting": "سلام! من سجاد هستم",
     "description": "من علاقه‌مند به React و Next هستم"

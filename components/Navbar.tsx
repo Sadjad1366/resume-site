@@ -6,7 +6,7 @@ import { classNames } from "@/utils/classNames";
 import Link from "next/link";
 import { Props } from "@/utils/types";
 
-const Navbar: React.FC<Props> = ({labels}) => {
+const Navbar: React.FC<Props> = ({ labels }) => {
   const pathname = usePathname();
   const router = useRouter();
 
@@ -15,23 +15,28 @@ const Navbar: React.FC<Props> = ({labels}) => {
   const oppositeLocale = currentLocale === "fa" ? "en" : "fa";
 
   const switchLocale = () => {
-    const newPath = "/" + [oppositeLocale, ...pathSegments.slice(2)].join("/");  // / + oppLang + restOfUrl
+    const newPath = "/" + [oppositeLocale, ...pathSegments.slice(2)].join("/"); // / + oppLang + restOfUrl
     router.push(newPath);
   };
 
   return (
     <main
       className={classNames(
-        "bg-slate-200 h-12 flex justify-center gap-x-4 items-center"
+        "h-12 flex justify-between px-4 md:px-10 items-center",
+        "text-lg font-semibold font-medium text-slate-700"
       )}
     >
-      <button onClick={switchLocale}>
-        {currentLocale === "fa" ? "English" : "فارسی"}
-      </button>
+      <div className="flex gap-x-8 justify-center w-full">
+        <Link href={`/${currentLocale}/projects`}>{labels.projects}</Link>
+        <Link href={`/${currentLocale}/about`}>{labels.about}</Link>
+        <Link href={`/${currentLocale}/contact`}>{labels.contact}</Link>
+      </div>
 
-      <Link href={`/${currentLocale}/projects`}>{labels.projects}</Link>
-      <Link href={`/${currentLocale}/about`}>{labels.about}</Link>
-      <Link href={`/${currentLocale}/contact`}>{labels.contact}</Link>
+      <div className="text-right">
+        <button onClick={switchLocale}>
+          {currentLocale === "fa" ? "English" : "فارسی"}
+        </button>
+      </div>
     </main>
   );
 };

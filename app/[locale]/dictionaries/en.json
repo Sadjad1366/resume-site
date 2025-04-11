@@ -1,4 +1,10 @@
 {
+  "home": {
+  "title": "I am a developer",
+  "description": "I focus on building clean, modern and fast UIs with React and Next.js.",
+  "seeProjects": "View Projects",
+  "contactMe": "Contact Me"
+},
   "intro": {
     "greeting": "Hi. My name is Sadjad",
     "description": "I am interested in ReactJs and NextJs"
