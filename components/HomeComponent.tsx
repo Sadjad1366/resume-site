@@ -74,7 +74,7 @@ export default function HomeComponent({ dict }: Props) {
           className="relative w-64 h-64 md:w-80 md:h-80 rounded-full shadow-xl"
         >
           <Image
-            src="https://via.placeholder.com/300x300"
+            src="/asset/babi.jpg"
             alt="سجاد"
             fill
             className="absolute object-cover grayscale"
