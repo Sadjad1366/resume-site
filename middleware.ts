@@ -32,6 +32,7 @@ export function middleware(request:NextRequest) {
 
     export const config = {
       matcher: [
-        "/((?!api|_next|favicon.ico).*)", // ⬅️ این خط خیلی مهمه
+#        "/((?!api|_next|favicon.ico).*)", // ⬅️ این خط خیلی مهمه
+"/((?!api|_next|favicon\\.ico|.*\\..*).*)"
       ],
     };
