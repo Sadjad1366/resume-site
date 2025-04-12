@@ -1,4 +1,21 @@
 {
+  "skills": {
+  "title": "مهارت‌های من",
+  "categories": [
+    {
+      "title": "فرانت‌اند",
+      "items": ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"]
+    },
+    {
+      "title": "ابزارها و همکاری",
+      "items": ["Git", "GitHub", "Figma", "Trello", "Vercel"]
+    },
+    {
+      "title": "APIها و پروتکل‌ها",
+      "items": ["RESTful APIs", "JSON", "Zod", "React Hook Form", "graphQL"]
+    }
+  ]
+},
   "home": {
   "title": "من یک توسعه‌دهنده‌ام",
   "description": "تمرکز من روی ساخت رابط‌های کاربری تمیز، مدرن و سریع با React و Next.js هست.",
@@ -10,9 +27,12 @@
     "description": "من علاقه‌مند به React و Next هستم"
   },
   "navbar": {
+    "home": "صفحه اصلی",
     "projects": "پروژه‌ها",
     "about": "درباره من",
-    "contact": "تماس با ما"
+    "contact": "تماس با ما",
+    "skills": "مهارت ها"
+
   },
   "about": {
     "title": "درباره من",

@@ -1,4 +1,4 @@
-import HomeComponent from "@/components/HomeComponent";
+import HomeComponent from "@/components/home/HomeComponent";
 import { getDictionary } from "./dictionaries";
 
 export default async function Home({params}:{params: {locale: 'en' | 'fa'}}) {

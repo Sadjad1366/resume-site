@@ -1,4 +1,21 @@
 {
+  "skills": {
+  "title": "My Skills",
+  "categories": [
+    {
+      "title": "Frontend",
+      "items": ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"]
+    },
+    {
+      "title": "Tools & Collaboration",
+      "items": ["Git", "GitHub", "Figma", "Trello", "Vercel"]
+    },
+    {
+      "title": "APIs & Protocols",
+      "items": ["RESTful APIs", "JSON", "Zod", "React Hook Form", "graphQL"]
+    }
+  ]
+},
   "home": {
   "title": "I am a developer",
   "description": "I focus on building clean, modern and fast UIs with React and Next.js.",
@@ -10,9 +27,11 @@
     "description": "I am interested in ReactJs and NextJs"
   },
   "navbar": {
+    "home": "Home",
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "skills": "Skills"
   },
   "about": {
     "title": "About Me",

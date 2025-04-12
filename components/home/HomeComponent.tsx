@@ -23,6 +23,7 @@ type Props = {
     description: string;
     seeProjects: string;
     contactMe: string;
+    skills?: string;
   };
 };
 
@@ -74,7 +75,7 @@ export default function HomeComponent({ dict }: Props) {
           className="relative w-64 h-64 md:w-80 md:h-80 rounded-full shadow-xl"
         >
           <Image
-            src="/asset/babi.jpg"
+            src="/assets/images/babi.jpg"
             alt="سجاد"
             fill
             className="absolute object-cover grayscale"
