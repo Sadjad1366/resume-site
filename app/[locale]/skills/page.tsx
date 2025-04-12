@@ -7,5 +7,9 @@ export default async function SkillPage({
   params: { locale: "fa" | "en" };
 }) {
   const dict = await getDictionary(params.locale);
-  return <SkillsComponent dict={dict.skills}  />;
+  return (
+    <div className="bg-slate-50">
+      <SkillsComponent dict={dict.skills}  />
+    </div>
+  );
 }

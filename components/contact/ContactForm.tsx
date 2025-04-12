@@ -35,38 +35,40 @@ export const ContactForm: React.FC<Props> = ({ dict }) => {
     mode: "all",
   });
 
- const onSubmit = async(data: ContactFormData) => {
-   try {
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data),
-    });
-    if(response.ok) {
-      toast.success(dict.success);
-      reset();
-    } else {
-      const errorData = await response.json();
-      console.error("Validation errors: ", errorData);
-      toast.error(dict.error)
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        toast.success(dict.success);
+        reset();
+      } else {
+        const errorData = await response.json();
+        console.error("Validation errors: ", errorData);
+        toast.error(dict.error);
+      }
+    } catch (error) {
+      console.error("Unexpected error: ", error);
+      toast.error(dict.error);
     }
-
-   } catch (error) {
-      console.error("Unexpected error: ", error)
-      toast.error(dict.error)
-   }
- }
+  };
 
   return (
     <motion.div
       variants={fadeInUp}
       initial="hidden"
       animate="show"
-      className="max-w-md mx-auto p-4"
+      className="max-w-md mx-auto p-4 h-screen"
     >
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="bg-white border p-6 rounded-lg space-y-4"
+      >
         <Input
           label={dict.name}
           placeholder={dict.name}
@@ -102,14 +104,16 @@ export const ContactForm: React.FC<Props> = ({ dict }) => {
           )}
         </div>
 
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="bg-slate-800 text-white px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-slate-700"
-        >
-          {" "}
-          {isSubmitting ? "Sending..." : `${dict.send}`}
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="bg-slate-800 text-white px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-slate-700"
+          >
+
+            {isSubmitting ? "Sending..." : `${dict.send}`}
+          </button>
+        </div>
       </form>
     </motion.div>
   );

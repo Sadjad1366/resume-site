@@ -22,16 +22,16 @@ const Navbar: React.FC<Props> = ({ labels }) => {
   return (
     <main
       className={classNames(
-        "h-12 flex justify-between px-4 md:px-10 items-center",
+        "h-16 flex justify-between px-4 md:px-10 items-center",
         "text-lg font-semibold text-slate-700"
       )}
     >
       <div className="flex gap-x-8 justify-center w-full">
-      <Link href={`/${currentLocale}/`}>{labels.home}</Link>
-        <Link href={`/${currentLocale}/projects`}>{labels.projects}</Link>
-        <Link href={`/${currentLocale}/skills`}>{labels.skills}</Link>
-        <Link href={`/${currentLocale}/about`}>{labels.about}</Link>
-        <Link href={`/${currentLocale}/contact`}>{labels.contact}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/`}>{labels.home}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/projects`}>{labels.projects}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/skills`}>{labels.skills}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/about`}>{labels.about}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/contact`}>{labels.contact}</Link>
       </div>
 
       <div className="text-right">

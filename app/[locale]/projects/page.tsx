@@ -10,8 +10,8 @@ export default async function ProjectsPage({
   const { locale } = await params;
   const dict = await getDictionary(locale);
   return (
-    <div>
-      <h1 className="text-center text-3xl font-bold py-3">
+    <div className="h-screen bg-slate-50">
+      <h1 className="text-center text-3xl font-bold py-6">
         {dict.projects.title}
       </h1>
       <ProjectsList projects={dict.projects.list} />

@@ -8,11 +8,11 @@ export default async function ContactPage({
 }) {
   const dict = await getDictionary(params.locale);
   return (
-    <>
-      <h1 className="text-center text-xl font-bold mt-6 mb-4">
+    <div className="bg-slate-50">
+      <h1 className="text-center text-xl p-6 font-bold">
         {dict.contact.title}
       </h1>
       <ContactForm dict={dict.contact} />
-    </>
+    </div>
   );
 }

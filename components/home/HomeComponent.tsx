@@ -35,7 +35,7 @@ export default function HomeComponent({ dict }: Props) {
       variants={fadeInUp}
       initial="hidden"
       animate="show"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-white"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-slate-50"
     >
       {/* Left - Text Content */}
       <motion.div className="md:w-1/2 space-y-6 text-center md:text-left">
@@ -78,7 +78,7 @@ export default function HomeComponent({ dict }: Props) {
             src="/assets/images/babi.jpg"
             alt="سجاد"
             fill
-            className="absolute object-cover grayscale"
+            className="absolute object-cover grayscale rounded-full"
             priority
           />
         </motion.div>

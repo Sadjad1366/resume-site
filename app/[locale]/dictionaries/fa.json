@@ -8,7 +8,7 @@
     },
     {
       "title": "ابزارها و همکاری",
-      "items": ["Git", "GitHub", "Figma", "Trello", "Vercel"]
+      "items": ["Git", "GitHub", "Figma", "NodeJS", "Trello", "Vercel"]
     },
     {
       "title": "APIها و پروتکل‌ها",
@@ -17,7 +17,7 @@
   ]
 },
   "home": {
-  "title": "من یک توسعه‌دهنده‌ام",
+  "title": "من یک توسعه‌دهنده‌ فرانت هستم",
   "description": "تمرکز من روی ساخت رابط‌های کاربری تمیز، مدرن و سریع با React و Next.js هست.",
   "seeProjects": "دیدن پروژه‌ها",
   "contactMe": "تماس با من"

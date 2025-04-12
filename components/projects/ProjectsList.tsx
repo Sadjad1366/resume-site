@@ -27,7 +27,7 @@ const ProjectsList: React.FC<Props> = ({ projects }) => {
       variants={containerVariants}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4"
+      className="bg-slate-50 grid grid-cols-1 md:grid-cols-2 gap-4 px-4"
     >
       {projects.map((project, index) => (
         <ProjectCard
