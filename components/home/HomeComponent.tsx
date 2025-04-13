@@ -38,23 +38,25 @@ export default function HomeComponent({ dict }: Props) {
       className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-slate-50"
     >
       {/* Left - Text Content */}
-      <motion.div className="md:w-1/2 space-y-6 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          {dict.title}
-        </h1>
-        <p className="text-slate-600 text-base md:text-lg max-w-md mx-auto md:mx-0">
+      <motion.div
+        className={`md:w-1/2 space-y-6 text-center ${
+          locale === "fa" ? "md:text-right" : "md:text-left"
+        }`}
+      >
+        <h1 className="text-4xl md:text-6xl font-bold">{dict.title}</h1>
+        <p className="text-slate-600 text-base md:text-2xl max-w-md">
           {dict.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Link
             href={`/${locale}/projects`}
-            className="px-6 py-2 bg-slate-800 text-white rounded-md hover:bg-slate-700 text-sm"
+            className="px-6 py-2 bg-slate-800 text-white rounded-md hover:bg-slate-700 text-lg"
           >
             {dict.seeProjects}
           </Link>
           <Link
             href={`/${locale}/contact`}
-            className="px-6 py-2 border border-slate-400 text-slate-700 rounded-md hover:bg-slate-100 text-sm"
+            className="px-6 py-2 border border-slate-400 text-slate-700 rounded-md hover:bg-slate-100 text-lg"
           >
             {dict.contactMe}
           </Link>
@@ -62,7 +64,7 @@ export default function HomeComponent({ dict }: Props) {
       </motion.div>
 
       {/* Right - Image */}
-      <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+      {/* <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
         <motion.div
           whileHover={{ scale: 1.03, rotate: 1 }}
           animate={{ y: [0, -10, 0] }}
@@ -82,6 +84,18 @@ export default function HomeComponent({ dict }: Props) {
             priority
           />
         </motion.div>
+      </div> */}
+      {/* Right - Image */}
+      <div className="md:w-1/2 flex justify-center mt-10 md:mt-0 pb-5">
+        <div className="relative w-72 h-72 md:w-[400px] md:h-[400px] rounded-full shadow-xl">
+          <Image
+            src="/assets/images/babi.jpg"
+            alt="سجاد"
+            fill
+            className="absolute object-cover grayscale rounded-full hover:scale-125 transition duration-300"
+            priority
+          />
+        </div>
       </div>
     </motion.section>
   );

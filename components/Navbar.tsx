@@ -26,15 +26,15 @@ const Navbar: React.FC<Props> = ({ labels }) => {
         "text-lg font-semibold text-slate-700"
       )}
     >
-      <div className="flex gap-x-8 justify-center w-full">
-        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/`}>{labels.home}</Link>
-        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/projects`}>{labels.projects}</Link>
-        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/skills`}>{labels.skills}</Link>
-        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/about`}>{labels.about}</Link>
-        <Link className="hover:underline hover:scale-110 transition duration-700" href={`/${currentLocale}/contact`}>{labels.contact}</Link>
+      <div className="flex gap-x-8 justify-center w-full text-xl">
+        <Link className="hover:underline hover:scale-110 transition duration-400" href={`/${currentLocale}/`}>{labels.home}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-400" href={`/${currentLocale}/projects`}>{labels.projects}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-400" href={`/${currentLocale}/skills`}>{labels.skills}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-400" href={`/${currentLocale}/about`}>{labels.about}</Link>
+        <Link className="hover:underline hover:scale-110 transition duration-400" href={`/${currentLocale}/contact`}>{labels.contact}</Link>
       </div>
 
-      <div className="text-right">
+      <div className="text-right text-xl">
         <button onClick={switchLocale} className="hover:cursor-pointer">
           {currentLocale === "fa" ? "English" : "فارسی"}
         </button>

@@ -23,11 +23,11 @@ const ProjectCard: React.FC<Props> = ({ title, description, link, techs }) => {
       variants={itemVariants}
       className="border rounded-xl p-4 shadow-md bg-white hover:shadow-lg transition-all"
     >
-      <h2 className="text-lg font-semibold mb-2">{title}</h2>
-      <p className="text-sm text-gray-600">{description}</p>
+      <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+      <p className="text-xl text-gray-600">{description}</p>
       <div className="flex gap-x-1 py-1">
         <FiLink className="text-blue-500" />
-        <Link href={link} className="text-sm text-blue-500">
+        <Link href={link} className="text-md text-blue-500">
           {link}
         </Link>
       </div>
@@ -36,7 +36,7 @@ const ProjectCard: React.FC<Props> = ({ title, description, link, techs }) => {
           <span
             key={index}
             className={classNames(
-              "px-2 py-1 rounded-full text-xs font-medium",
+              "px-2 py-1 rounded-full text-sm font-medium",
               "bg-slate-100 text-slate-600 hover:bg-slate-300 transition duration-700 hover:-translate-y-1"
             )}
           >

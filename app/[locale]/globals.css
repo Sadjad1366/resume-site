@@ -18,9 +18,18 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: 'BNazanin';
+  src: url('/fonts/BNazanin/BNazanin.woff2') format('woff2'),
+       url('/fonts/BNazanin/BNazanin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: BNazanin, Arial, Helvetica, sans-serif ;
 }
