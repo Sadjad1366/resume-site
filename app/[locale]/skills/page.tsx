@@ -4,9 +4,10 @@ import { getDictionary } from "../dictionaries";
 export default async function SkillPage({
   params,
 }: {
-  params: { locale: "fa" | "en" };
+  params: Promise<{ locale: 'en' | 'fa' }>
 }) {
-  const dict = await getDictionary(params.locale);
+  const {locale} = await params;
+  const dict = await getDictionary(locale);
   return (
     <div className="bg-slate-50">
       <SkillsComponent dict={dict.skills}  />

@@ -1,11 +1,10 @@
 import { getDictionary } from "../dictionaries";
-import  ProjectsList  from "@/components/projects/ProjectsList";
-
+import ProjectsList from "@/components/projects/ProjectsList";
 
 export default async function ProjectsPage({
   params,
 }: {
-  params: { locale: "en" | "fa" };
+  params: Promise<{ locale: "en" | "fa" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
