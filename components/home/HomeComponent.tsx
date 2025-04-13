@@ -44,7 +44,7 @@ export default function HomeComponent({ dict }: Props) {
         }`}
       >
         <h1 className="text-4xl md:text-6xl font-bold">{dict.title}</h1>
-        <p className="text-slate-600 text-base md:text-2xl max-w-md">
+        <p className="text-slate-500 text-base font-semibold md:text-2xl max-w-md">
           {dict.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

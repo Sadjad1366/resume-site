@@ -4,7 +4,18 @@
   "categories": [
     {
       "title": "فرانت‌اند",
-      "items": ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"]
+      "items": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "React Hook Form",
+        "React Query",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "title": "ابزارها و همکاری",
@@ -12,7 +23,7 @@
     },
     {
       "title": "APIها و پروتکل‌ها",
-      "items": ["RESTful APIs", "JSON", "Zod", "React Hook Form", "graphQL"]
+     "items": ["RESTful APIs", "JSON", "Zod", "graphQL"]
     }
   ]
 },

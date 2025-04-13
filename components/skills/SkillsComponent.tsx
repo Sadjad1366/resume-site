@@ -45,16 +45,16 @@ const SkillsPage: React.FC<Props> = ({ dict }) => {
       >
         {dict.categories.map((group, index) => (
           <motion.div key={index} variants={itemVariants}>
-            <h2 className="text-xl font-semibold text-slate-700 mb-1">
+            <h2 className="text-2xl font-semibold text-slate-700 mb-1">
               {group.title}
             </h2>
-            <div className="flex flex-wrap gap-2 border p-4 rounded-lg bg-white">
+            <div className="flex flex-wrap gap-2 border p-5 rounded-lg bg-white">
               {group.items.map((item, idx) => (
                 <span
                   key={idx}
                   className={classNames(
-                    "px-3 py-1 rounded-full text-sm font-medium",
-                    "bg-slate-100 text-slate-700 hover:bg-slate-200 transition"
+                    "px-4 py-2 m-1 rounded-full text-sm font-bold",
+                    "bg-slate-100 text-slate-700 hover:bg-slate-200 transition hover:scale-105"
                   )}
                 >
                   {item}

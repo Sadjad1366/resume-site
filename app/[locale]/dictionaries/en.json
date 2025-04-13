@@ -4,15 +4,26 @@
   "categories": [
     {
       "title": "Frontend",
-      "items": ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"]
+      "items": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "React Hook Form",
+        "React Query",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "title": "Tools & Collaboration",
-      "items": ["Git", "GitHub", "Figma", "NodeJS", "Trello", "Vercel"]
+     "items": ["Git", "GitHub", "Figma", "NodeJS", "Trello", "Vercel"]
     },
     {
       "title": "APIs & Protocols",
-      "items": ["RESTful APIs", "JSON", "Zod", "React Hook Form", "graphQL"]
+     "items": ["RESTful APIs", "JSON", "Zod", "graphQL"]
     }
   ]
 },
