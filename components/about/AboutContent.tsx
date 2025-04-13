@@ -18,9 +18,9 @@ type Props = {
     >
      <div className="mt-8 border rounded-lg p-4 bg-white">
      <h1 className="text-4xl font-bold mb-4">{title}</h1>
-      <p className="text-xl text-slate-700 mb-1">{intro}</p>
+      <p className="text-xl text-slate-500 mb-1">{intro}</p>
       <div className="bg-slate-200 h-[1px] mb-6"></div>
-      <p className="text-xl text-slate-700 leading-relaxed text-justify">{details}</p>
+      <p className="text-xl text-slate-500 leading-10 text-justify">{details}</p>
      </div>
     </motion.div>
   );
