@@ -56,7 +56,7 @@
       {
         "title": "Personal Resume",
         "description": "A site to showcase skills and portfolio",
-        "link": "https://nomanzi.com",
+        "link": "https://sadjad-resume.vercel.app/",
         "techs": ["React", "Next.js", "Tailwind"]
       },
       {
