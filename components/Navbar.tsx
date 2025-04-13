@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { classNames } from "@/utils/classNames";
 import Link from "next/link";
 import { Props } from "@/utils/types";
 import { FiMenu, FiX } from "react-icons/fi";
