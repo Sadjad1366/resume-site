@@ -48,7 +48,7 @@ const SkillsPage: React.FC<Props> = ({ dict }) => {
             <h2 className="text-2xl font-semibold text-slate-700 mb-1">
               {group.title}
             </h2>
-            <div className="flex flex-wrap gap-2 border p-5 rounded-lg bg-white">
+            <div className="flex flex-wrap gap-2 border p-3 rounded-lg bg-white">
               {group.items.map((item, idx) => (
                 <span
                   key={idx}

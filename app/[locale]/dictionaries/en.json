@@ -3,27 +3,51 @@
   "title": "My Skills",
   "categories": [
     {
-      "title": "Frontend",
+      "title": "Core Technologies",
       "items": [
-        "React.js",
-        "Next.js",
-        "TypeScript",
-        "JavaScript",
-        "Tailwind CSS",
-        "Redux Toolkit",
-        "React Hook Form",
-        "React Query",
         "HTML",
-        "CSS"
+        "CSS",
+        "JavaScript",
+        "TypeScript"
       ]
     },
     {
-      "title": "Tools & Collaboration",
-     "items": ["Git", "GitHub", "Figma", "NodeJS", "Trello", "Vercel"]
+      "title": "Frameworks & Libraries",
+      "items": [
+        "React.js",
+        "Next.js",
+        "Redux Toolkit",
+        "React Query",
+        "React Hook Form"
+      ]
     },
     {
-      "title": "APIs & Protocols",
-     "items": ["RESTful APIs", "JSON", "Zod", "graphQL"]
+      "title": "Styling & UI",
+      "items": [
+        "Tailwind CSS",
+        "Material UI",
+        "shadcn/ui"
+      ]
+    },
+    {
+      "title": "APIs & Data Handling",
+      "items": [
+        "RESTful APIs",
+        "GraphQL",
+        "JSON",
+        "Zod"
+      ]
+    },
+    {
+      "title": "Tools & Platforms",
+      "items": [
+        "Git",
+        "GitHub",
+        "Node.js",
+        "Vercel",
+        "Figma",
+        "Trello"
+      ]
     }
   ]
 },

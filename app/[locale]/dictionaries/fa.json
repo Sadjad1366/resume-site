@@ -3,27 +3,51 @@
   "title": "مهارت‌های من",
   "categories": [
     {
-      "title": "فرانت‌اند",
+      "title": "تکنولوژی های کلیدی",
       "items": [
-        "React.js",
-        "Next.js",
-        "TypeScript",
-        "JavaScript",
-        "Tailwind CSS",
-        "Redux Toolkit",
-        "React Hook Form",
-        "React Query",
         "HTML",
-        "CSS"
+        "CSS",
+        "JavaScript",
+        "TypeScript"
       ]
     },
     {
-      "title": "ابزارها و همکاری",
-      "items": ["Git", "GitHub", "Figma", "NodeJS", "Trello", "Vercel"]
+      "title": "فریم ورک ها و کتابخانه ها",
+      "items": [
+        "React.js",
+        "Next.js",
+        "Redux Toolkit",
+        "React Query",
+        "React Hook Form"
+      ]
     },
     {
-      "title": "APIها و پروتکل‌ها",
-     "items": ["RESTful APIs", "JSON", "Zod", "graphQL"]
+      "title": "طراحی بصری و UI",
+      "items": [
+        "Tailwind CSS",
+        "Material UI",
+        "shadcn/ui"
+      ]
+    },
+    {
+      "title": "تعامل با API و داده ها",
+      "items": [
+        "RESTful APIs",
+        "GraphQL",
+        "JSON",
+        "Zod"
+      ]
+    },
+    {
+      "title": "Tools & Platforms",
+      "items": [
+        "Git",
+        "GitHub",
+        "Node.js",
+        "Vercel",
+        "Figma",
+        "Trello"
+      ]
     }
   ]
 },
